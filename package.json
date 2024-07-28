@@ -1,6 +1,6 @@
 {
-  "name": "app",
   "homepage": "https://mythicalplayz.github.io/Route-Framework-React/",
+  "name": "route-framework-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
