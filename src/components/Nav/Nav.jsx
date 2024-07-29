@@ -13,6 +13,19 @@ export default function Nav() {
             nav.classList.replace('h-0','h-48');
         }
     }
+
+    function navChange(){
+        if (window.scrollY >= 100) {
+            document.querySelector('nav>div').classList.replace('my-5','my-1');
+        } else {
+            document.querySelector('nav>div').classList.replace('my-1','my-5');
+        }
+    }
+
+    window.addEventListener('scroll',function(e){
+        navChange();
+    })
+
     return (
         <nav className='bg-[#2c3e50] w-full fixed top-0 transition-all z-10'>
             <div className="w-full px-4 md:px-28 mx-auto flex justify-between items-center flex-wrap md:flex-nowrap transition-all duration-300 h-full my-5">
