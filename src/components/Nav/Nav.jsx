@@ -27,7 +27,7 @@ export default function Nav() {
     })
 
     return (
-        <nav className='bg-[#2c3e50] w-full fixed top-0 transition-all z-10'>
+        <nav className='bg-[#2c3e50] w-full fixed top-0 transition-all duration-300 z-10'>
             <div className="w-full px-4 md:px-28 mx-auto flex justify-between items-center flex-wrap md:flex-nowrap transition-all duration-300 h-full my-5">
                 <Link id='home' to="/" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-white'>Start Framework</Link>
                 <button onClick={toggleNav} className='flex md:hidden justify-center items-center bg-transparent transition-all border-black border focus:outline focus:outline-black focus:outline-4'><i className='fa-solid fa-bars fa-2x'></i></button>
